@@ -1,2 +1,6 @@
 /testing-files
+# Other macOS cruft
+._*
+.Spotlight-V100
+.Trashes
 .DS_Store
