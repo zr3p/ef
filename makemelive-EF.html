@@ -1,0 +1,722 @@
+<!-- this is editing template text for making live and removing from Canva-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowered First</title>
+    <!-- ******* Add Umami Tracking Script Here ******* -->
+    <script defer src="https://denhamgreen.eu/script.js" data-website-id="bf20d994-2d40-44b4-8c4d-5986363eeac4"></script>
+    <!-- ********************************************* -->
+    <meta name="description" content="Coaching specifically designed for Professional Women over 40 to feel liberated, revitalised and refocused again!">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #304254;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header Styles */
+        header {
+            background-color: #304254;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #f4f6fc;
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: #f4f6fc;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            /* color: #e8c4c4; original color from Qwen */ 
+            color: #9B4F98;
+
+        }
+
+        /* Mobile Navigation Styles */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #f4f6fc;
+            margin: 4px 0;
+            transition: 0.4s;
+        }
+        #mobile-menu-toggle {
+            display: none;
+        }
+        #mobile-menu-toggle:checked ~ nav ul {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            nav ul {
+                position: fixed;
+                top: 70px; /* Adjust based on header height */
+                left: 0;
+                width: 100%;
+                background-color: #304254;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                display: none; /* Hidden by default */
+                box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+            }
+            nav ul li {
+                margin: 15px 0;
+            }
+        }
+
+
+        /* Hero Section */
+        .hero {
+            /* background: linear-gradient(rgba(48, 66, 84, 0.8), rgba(48, 66, 84, 0.9)), url('https://placehold.co/1200x600/304254/ffffff?text=Empowered+First') no-repeat center center/cover; */
+            /* background: linear-gradient(rgba(48, 66, 84, 0.8), rgba(48, 66, 84, 0.9)), url('nnm-hero.webp') no-repeat top center/cover; original*/
+            background: linear-gradient(rgba(48, 66, 84, 0.5), rgba(48, 66, 84, 0.6)), url('nnm-hero.webp') no-repeat top center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #9B4F98;
+            /* color: #304254; */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            border: 2px solid #9B4F98;
+            cursor: pointer; /* Added cursor pointer for buttons/links */
+        }
+        .cta-button:hover {
+            background-color: transparent;
+            color: #9B4F98;
+        }
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #304254;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #304254;
+        }
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Combined How We Help Section */
+        .how-we-help {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+        .how-we-help .services-grid { /* Reuse service grid styles */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px; /* Space below the cards */
+        }
+        .how-we-help .service-card { /* Reuse service card styles */
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .how-we-help .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .how-we-help .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #304254;
+        }
+        .how-we-help .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #304254;
+        }
+
+        /* Steps within How We Help */
+        .how-we-help-content {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 30px; /* Space between steps */
+            justify-content: center; /* Center cards if they wrap */
+        }
+        .step {
+            flex: 1; /* Allow cards to grow/shrink */
+            min-width: 300px; /* Minimum width before wrapping */
+            background: #f8f9fa; /* Light grey background */
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s; /* Apply hover effect */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Match service card shadow */
+        }
+        .step:hover {
+            transform: translateY(-10px); /* Match service card hover */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Match service card hover */
+        }
+        .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #304254;
+        }
+        .step p {
+            margin-bottom: 10px; /* Space below paragraphs */
+        }
+        .step ul {
+            list-style-type: disc; /* Ensure bullets are shown */
+            padding-left: 20px; /* Indent list */
+            margin-top: 10px; /* Space above list */
+        }
+        .step li {
+            margin-bottom: 8px; /* Space between list items */
+        }
+
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: #ffffff; /* Changed to white to match Services */
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .testimonial-card {
+            background: #f8f9fa; /* Changed to light grey like About/How We Help */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        .testimonial-card:before {
+            content: """;
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            color: #9B4F98;
+            opacity: 0.3;
+        }
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        .author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .author-info h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .author-info p {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(rgba(48, 66, 84, 0.9), rgba(48, 66, 84, 0.9)), url('https://placehold.co/1200x600/304254/ffffff?text=Contact+Us') no-repeat center center/cover;
+            color: white;
+        }
+        .contact-content {
+            display: flex;
+            gap: 50px;
+        }
+        .contact-info {
+            flex: 1;
+        }
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-details i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+            color: #9B4F98;
+        }
+        .contact-form {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.9);
+            font-family: 'Montserrat', sans-serif;
+        }
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        /* Footer */
+        footer {
+            background-color: #304254;
+            color: #f4f6fc;
+            padding: 50px 0 20px;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #9B4F98;
+        }
+        .footer-column p {
+            margin-bottom: 20px;
+        }
+        .footer-column ul {
+            list-style: none;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            color: #f4f6fc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-column ul li a:hover {
+            color: #9B4F98;
+        }
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #f4f6fc;
+            transition: all 0.3s;
+        }
+        .social-links a:hover {
+            background-color: #9B4F98;
+            color: #304254;
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(244, 246, 252, 0.7);
+        }
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content,
+            .contact-content {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+            /* Adjust How We Help layout for medium screens if needed */
+            .how-we-help-content {
+                flex-direction: column; /* Stack steps vertically on medium */
+                align-items: stretch; /* Make cards full width */
+            }
+        }
+        @media (max-width: 768px) {
+            /* nav ul is now handled by mobile toggle */
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            /* Ensure steps stack properly on small screens */
+            .step {
+                min-width: 100%; /* Full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">EmpoweredFirst</a>
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="mobile-menu-toggle">
+            <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#how-we-help">How We Help</a></li> <!-- Updated nav link -->
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Coaching for Professional Women Over 40</h1>
+            <p>Feel liberated, revitalised and refocused again!</p>
+            <a href="#contact" class="cta-button">Start Your Journey</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Empowered First</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Journey to Empowerment Starts Here</h3>
+                    <p>Welcome to Empowered First, where we understand that life after 50 isn't about winding down—it's about stepping into your most powerful self yet.</p>
+                    <p>Whether you're contemplating a career break, ready to return after time away, looking to level up in a new direction, or seeking purpose alongside success, I've been there, I've done it, and I can guide you how.</p>
+                    <p>Our coaching programs are specifically designed for professional women who are ready to reclaim their confidence, rediscover their purpose, and redesign their future.</p>
+                </div>
+                <div class="about-image">
+                    <img src="nnm-ef-about.webp" alt="Professional Woman">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Combined How We Help Section -->
+    <section id="how-we-help" class="how-we-help"> <!-- Updated ID and Class -->
+        <div class="container">
+            <h2 class="section-title">How We'll Get You There</h2>
+
+            <!-- Service Cards Grid (from old Services section) -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Career Clarity</h3>
+                    <p>Discover your true passions and align them with your professional goals for a fulfilling career path.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔄</div>
+                    <h3>Return to Work</h3>
+                    <p>Confidently navigate your return to the workforce with our tailored re-entry programs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Leadership Development</h3>
+                    <p>Unlock your leadership potential and step into positions of influence with confidence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Purpose & Success</h3>
+                    <p>Align your professional success with your personal values and life purpose.</p>
+                </div>
+            </div>
+
+            <!-- How We Help Content (from old How We Help section) -->
+            <div class="how-we-help-content">
+                <div class="step">
+                    <h3>1. Clarity Session</h3>
+                    <p>(90 minutes) - £150</p>
+                    <p>Perfect if you're asking, "What's my next move?"</p>
+                    <p>You'll walk away with:</p>
+                    <ul>
+                        <li>A clear vision of your ideal next career chapter</li>
+                        <li>Understanding of what's really holding you back (it's usually not what you think)</li>
+                        <li>Concrete steps to position your career break as an advantage</li>
+                        <li>Immediate actions you can take to start building momentum</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <h3>2. Career Comeback Accelerator</h3>
+                    <p>(3 months) - £600 or £120 x3 payments</p>
+                    <p>For those ready to turn their comeback plan into reality.</p>
+                    <p>You'll receive:</p>
+                    <ul>
+                        <li>Bi-weekly strategy sessions to keep you focused and accountable</li>
+                        <li>A magnetic personal brand that makes employers pursue you</li>
+                        <li>Modern resume and LinkedIn transformation</li>
+                        <li>Interview strategies that turn your career gap into your most significant talking point</li>
+                        <li>Salary negotiation techniques that help you earn what you're worth</li>
+                        <li>Access to templates, scripts, and resources that simplify your journey</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Success Stories</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Working with Empowered First transformed my perspective on my career. At 52, I never thought I could start my own business, but here I am, thriving in my passion!</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://placehold.co/100x100/e8c4c4/304254?text=S" alt="Sarah">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <p>Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">After 15 years away from corporate life, I was terrified to re-enter. The return-to-work program gave me the confidence and tools I needed to land my dream role.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://placehold.co/100x100/e8c4c4/304254?text=L" alt="Lisa">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa T.</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">The coaching helped me see that my experience wasn't a liability—it was my greatest asset. I've never felt more confident in my professional abilities.</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://placehold.co/100x100/e8c4c4/304254?text=R" alt="Rachel">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rachel K.</h4>
+                            <p>Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to Empower Yourself?</h3>
+                    <p>Take the first step towards a more confident and fulfilling professional future. Schedule a complimentary consultation today.</p>
+                    <div class="contact-details">
+                        <p><i>📧</i> hello@empoweredfirst.com</p>
+                        <p><i>📱</i> +44 123 456 7890</p>
+                        <p><i>📍</i> London, United Kingdom</p>
+                    </div>
+                    <p>Access to templates, scripts, and resources that simplify your journey to professional empowerment.</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST"> <!-- Add your form handler URL here later -->
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help you?</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EmpoweredFirst</h3>
+                    <p>Coaching specifically designed for Professional Women over 40 to feel liberated, revitalised and refocused again!</p>
+                    <div class="social-links">
+                        <a href="#"><span>📘</span></a>
+                        <a href="#"><span>📷</span></a>
+                        <a href="#"><span>🐦</span></a>
+                        <a href="#"><span>💼</span></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#how-we-help">How We Help</a></li> <!-- Updated nav link -->
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Career Clarity Coaching</a></li>
+                        <li><a href="#">Return to Work Programs</a></li>
+                        <li><a href="#">Leadership Development</a></li>
+                        <li><a href="#">Purpose & Success Alignment</a></li>
+                        <li><a href="#">Group Workshops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <p>London, United Kingdom</p>
+                    <p>hello@empoweredfirst.com</p>
+                    <p>+44 123 456 7890</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Empowered First | All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
